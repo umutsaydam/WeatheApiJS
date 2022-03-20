@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="weather-box">
+            <div class="select-city">
+                <input type="text" name="" id="cityInfo" placeholder="Şehir girin...">
+                <button onclick="getResult();">Ara</button>
+            </div>
+            <div class="weather">
+                <div class="location">
+                    <h2>Hava Durumu</h2>
+                </div>
+                <div class="weather-state">
+                    <img src="Img/animated/weather.svg" alt="">
+                </div>
+                <div class="temp">
+                    Güncel Sıcaklık: --°C
+                </div>
+                <div class="desc">Durum: -----</div>
+                <div class="min-max">
+                  Minimum / Maksimum  --°C / --°C
+                </div>
+            </div>
+            <div class="weather-comments">
+            </div>
+        </div>
+        <div class="calendar-box">
+            <div class="date">
+                <i class="fas fa-angle-left prev"></i>
+                <div class="info">
+                    <h1></h1>
+                    <p><a onclick="currentLocation();"></a></p>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+            </div>
+            <div class="weekdays">
+                <div>Pt</div>
+                <div>Sa</div>
+                <div>Ça</div>
+                <div>Pe</div>
+                <div>Cu</div>
+                <div>Ct</div>
+                <div>Pa</div>
+            </div>
+            <div class="days">
+            </div>
+        </div>
+    </div>
+
+    <script src="js.js" async defer></script>
+    <script src="weatherJs.js"></script>
+</body>
+
+</html>
+
+<!--
+Img/animated/cloudy-day-1.svg bulutlu sabah
+Img/animated/cloudy-night-1.svg bulutlu gece
+Img/animated/day.svg bulutsuz güneşli
+Img/animated/day.svg bulutsuz gece
+Img/animated/rainy-5.svg yağmulu
+Img/animated/snowy-5.svg" karlı
+-->
