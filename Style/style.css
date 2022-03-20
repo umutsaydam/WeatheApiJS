@@ -33,12 +33,6 @@ input::placeholder{
     font-size: 1.3rem;
 }
 
-.calendar-box{
-    width: 50%;
-    height: 100vh;
-    padding-top: 1.5rem;
-}
-
 .date{
     display: flex;
     align-items: center;
@@ -169,6 +163,12 @@ input::placeholder{
         background-size: 4px 4px, calc(100% - (2 * 4px)) 3px, 4px 4px, 3px calc(100% - (2 * 4px));
         background-repeat: no-repeat;
     }
+    
+    .calendar-box{
+    width: 50%;
+    height: 100vh;
+    padding-top: 1.5rem;
+    }
      
    }
 
@@ -206,7 +206,7 @@ input::placeholder{
     }
 
     .weather-state img {
-        width: 100%;
+        width: 60%;
         height: 25vh;
     }
     
@@ -222,5 +222,11 @@ input::placeholder{
         background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
         background-size: 4px 4px, calc(100% - (2 * 4px)) 3px, 4px 4px, 3px calc(100% - (2 * 4px));
         background-repeat: no-repeat;
+    }
+    
+    .calendar-box{
+    width: 100%;
+    height: auto;
+    padding-top: 1.5rem;
     }
   }
